@@ -14,11 +14,15 @@ import { AuthModule } from './auth/auth.module';
 
 
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
     NopagefoundComponent,
-  
+
+
+
 
   ],
   imports: [
@@ -26,6 +30,7 @@ import { AuthModule } from './auth/auth.module';
     AppRoutingModule,
     PagesModule,
     AuthModule
+
   ],
   bootstrap: [AppComponent]
 })
