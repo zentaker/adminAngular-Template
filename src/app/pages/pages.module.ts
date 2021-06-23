@@ -9,6 +9,9 @@ import { AppRoutingModule } from '../app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { ComponentsModule } from '../components/components.module.ts.module';
 
+import { ChartsModule } from 'ng2-charts';
+
+
 @NgModule({
   declarations: [
     DasboardComponent,
@@ -27,7 +30,9 @@ import { ComponentsModule } from '../components/components.module.ts.module';
     SharedModule,
     AppRoutingModule,
     FormsModule,
-    ComponentsModule
+    ComponentsModule,
+    ChartsModule
+
   ],
 })
 export class PagesModule {}
