@@ -5,6 +5,8 @@ import { DasboardComponent } from "./dasboard/dasboard.component";
 import { ProgressComponent } from "./progress/progress.component";
 import { Grafica1Component } from "./grafica1/grafica1.component";
 import { AccountSettingsComponent } from "./account-settings/account-settings.component";
+import { PromesasComponent } from "./promesas/promesas.component";
+import { RxjsComponent } from "./rxjs/rxjs.component";
 
  const routes: Routes = [
   {
@@ -12,10 +14,12 @@ import { AccountSettingsComponent } from "./account-settings/account-settings.co
     component: PagesComponent,
     children: [
       //quitar el nombre para la ruta por defecto
-      { path: '', component: DasboardComponent },
-      { path: 'progress', component: ProgressComponent },
-      { path: 'grafica1', component: Grafica1Component },
-      { path: 'account-settings', component: AccountSettingsComponent },
+      { path: '', component: DasboardComponent, data: {title: 'dasboard'} },
+      { path: 'progress', component: ProgressComponent, data: {title: 'Progres Bar'} },
+      { path: 'grafica1', component: Grafica1Component, data: {title: 'Grafica'} },
+      { path: 'account-settings', component: AccountSettingsComponent, data: {title: 'Tema'} },
+      { path: 'promesas', component: PromesasComponent,  data: {title: 'Promesas'}},
+      { path: 'rxjs', component: RxjsComponent, data: {title: 'Rxjs'} },
 
     ],
   },
